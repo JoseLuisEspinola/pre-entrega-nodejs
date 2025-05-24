@@ -5,7 +5,7 @@ import readline from "readline-sync";
 const API_URL = "https://683101fc6205ab0d6c3afd3a.mockapi.io/api/v1/todos"; // Reemplaza con tu URL de MockAPI
 
 async function main() {
-    console.log("\n💬 Sistema interactivo con MockAPI");
+    console.log("\n\x1b[36m💬 Sistema interactivo con MockAPI\x1b[0m\n");
 
     while (true) {
         console.log("\nEscribe GET, POST, PUT, DELETE o SALIR para terminar:");
@@ -76,7 +76,7 @@ async function main() {
                 break;
 
             case "SALIR":
-                console.log("\n👋 Saliendo del programa...");
+                console.log("\n\x1b[32m👋 Saliendo del programa...\x1b[0m");
                 return; 
 
             default:
